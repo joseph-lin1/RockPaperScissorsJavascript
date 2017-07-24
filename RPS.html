@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Rock Paper Scissors Part 1</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-
- <div class="header">
+<!--Banner-->
+ <div class="header jumbotron ">
    <div class="title">
     <h1>Rock Paper Scissors</h1>
-      <input type="text" id="userInput" placeholder ="  Choose R, P, or S to start ">
+      <!--Modal Instructions-->
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Instructions
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Instructions</h4>
+            </div>
+            <div class="modal-body">
+              <p>Hello, Welcome to Rock Paper Scissors. In the input below please put R, P, or S for (Rock Paper Scissors).</p>
+              <p><strong>Rock Beats Scissors</strong></p>
+              <p><strong>Paper Beats Rock</strong></p>
+              <p><strong>Scissors Beat Paper</strong></p>
+              <p>Let's see if you can beat the computer! </p>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
    </div>
    <div class="scores">
-      <h1>Win: <span id="winScore">0</span>
+      <h4>Win: <span id="winScore">0</span>
       <span>Loss: <span id="lossScore">0</span>
-      Tie: <span id="tieScore">0</span></span></h1>
+      Tie: <span id="tieScore">0</span></span><h/4>
+      <hr>
+      <div>
+         <input type="text" id="userInput" placeholder ="  Choose R, P, or S to start ">
+      </div>
+     
     </div>
+    
  </div>
 
 
 <div class="container">
     <div class="userSection">
-      <h1>You</h1>
+      <h2>You</h2>
       <img id="user1RockImg" src="img/rock1.png">
       <img id="user1PaperImg"src="img/paper1.png">
       <img id="user1ScissorImg" src="img/scissors1.png">
     </div>
 
     <div class="computerSection">
-      <h1>Computer</h1>
+      <h2>Computer</h2>
       <img id="computer2RockImg" src="img/rock2.png">
       <img id="computer2PaperImg" src="img/paper2.png">
       <img id="computer2ScissorImg" src="img/scissors2.png">

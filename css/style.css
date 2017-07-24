@@ -1,55 +1,79 @@
+body{
+    background-image: url("http://68.media.tumblr.com/e370704333a342d62621eca1abfb485c/tumblr_inline_n0oixpTI1G1s829k0.gif");
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+/*Banner*/
 .header{
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .scores{
     text-align: center;
 }
-.title{
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
+
+input{
+    max-width: 80%;
+    width: 500px;
+    height: 50px;
 }
 
-
-.container{
-    height: 60%;
-    width: 60%;
-    margin: 0 auto;
+/*Labels for Users*/
+h2{
+    color: white
 }
 
+/*Users*/
 .userSection{
     float: left;
     width: 40%;
-    margin-right: 10%;
 }
-.computerSection{
-    float: right;
-    width: 40%;
-    margin-left: 10%;
-}
+
+/*User Image for Choices*/
 #user1RockImg{
     display: none;
+    text-align: center;
+    max-width: 70%;
 }
 
 #user1PaperImg{
     display: none;
+    text-align: center;
+    width: 70%;
 }
 
 #user1ScissorImg{
     display: none;
+    text-align: center;
+    width: 70%;
 }
 
+/*Computer Section*/
+.computerSection{
+    float: right;
+    width: 40%;
+    
+}
+/*Computer Image for Choices*/
 #computer2RockImg{
     display: none;
+    text-align: center;
+    width: 70%;
 }
 
 
 #computer2PaperImg{
     display: none;
+    text-align: center;
+    width: 70%;
 }
 
 #computer2ScissorImg{
     display: none;
+    text-align: center;
+    width: 70%;
 }

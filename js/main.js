@@ -60,7 +60,7 @@ function second(){
       second();
     }
     else{
-      alert(error = "choose rock paper or scissor");
+      alert(error = "you chose " + userRpsInput.value + " please choose r, p, or s");
     //  error.innerHTML = "choose rock paper or scissor";
     }
     if((userRpsInput.value === "r") && (computerOutput ==="r")){
