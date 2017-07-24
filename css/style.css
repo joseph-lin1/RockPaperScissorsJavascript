@@ -1,0 +1,52 @@
+.header{
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.container{
+    height: 60%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.userSection{
+    float: left;
+    width: 40%;
+    margin-right: 10%;
+}
+.computerSection{
+    float: right;
+    width: 40%;
+    margin-left: 10%;
+}
+#user1RockImg{
+    display: none;
+}
+
+#user1PaperImg{
+    display: none;
+}
+
+#user1ScissorImg{
+    display: none;
+}
+
+#computer2RockImg{
+    display: none;
+}
+
+
+#computer2PaperImg{
+    display: none;
+}
+
+#computer2ScissorImg{
+    display: none;
+}
