@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <title>Rock Paper Scissors Part 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+
  <div class="header">
    <div class="title">
     <h1>Rock Paper Scissors</h1>
-      <input type="text" id="userInput">
+      <input type="text" id="userInput" placeholder ="  Choose R, P, or S to start ">
    </div>
+   <div class="scores">
+      <h1>Win: <span id="winScore">0</span>
+      <span>Loss: <span id="lossScore">0</span>
+      Tie: <span id="tieScore">0</span></span></h1>
+    </div>
  </div>
 
-    <div>
-      <h1>Win: <span id="winScore">0</span></h1>
-      <h1>Loss: <span id="lossScore">0</span></h1>
-      <h1>Tie: <span id="tieScore">0</span></h1>
-    </div>
+
 <div class="container">
     <div class="userSection">
       <h1>You</h1>
@@ -34,8 +38,13 @@
     </div>
 </div>
 
-
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script src="js/main.js"></script>
+
 </body>
 </html>

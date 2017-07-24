@@ -3,6 +3,9 @@
     height: 100%;
 }
 
+.scores{
+    text-align: center;
+}
 .title{
     width: 60%;
     margin: 0 auto;

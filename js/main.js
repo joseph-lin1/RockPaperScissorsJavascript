@@ -13,13 +13,54 @@
   userRpsInput.addEventListener("keyup", userAction);
   
   function userAction(){
+    
+    function first(){
+    if(userRpsInput.value === "r"){
+      document.getElementById("user1RockImg").style.display = "block";
+      document.getElementById("user1PaperImg").style.display = "none";
+      document.getElementById("user1ScissorImg").style.display = "none";
+    }
+    else if (userRpsInput.value === "p"){
+      document.getElementById("user1RockImg").style.display = "none";
+      document.getElementById("user1PaperImg").style.display = "block";
+      document.getElementById("user1ScissorImg").style.display = "none";
+    }
+    else if (userRpsInput.value === "s"){
+      document.getElementById("user1RockImg").style.display = "none";
+      document.getElementById("user1PaperImg").style.display = "none";
+      document.getElementById("user1ScissorImg").style.display = "block";
+      
+    }
+}
+  
+function second(){
+    if(computerOutput === "r"){
+      document.getElementById("computer2RockImg").style.display = "block";
+      document.getElementById("computer2PaperImg").style.display = "none";
+      document.getElementById("computer2ScissorImg").style.display = "none";
+    }
+    else if (computerOutput === "p"){
+      document.getElementById("computer2RockImg").style.display = "none";
+      document.getElementById("computer2PaperImg").style.display = "block";
+      document.getElementById("computer2ScissorImg").style.display = "none";
+    }
+    else if (computerOutput === "s"){
+      document.getElementById("computer2RockImg").style.display = "none";
+      document.getElementById("computer2PaperImg").style.display = "none";
+      document.getElementById("computer2ScissorImg").style.display = "block";
+    }
+}
+
+
     var computerOutput = computerGuess[Math.floor(Math.random() * computerGuess.length)];
     if (userRpsInput.value === "p" || userRpsInput.value === "s" || userRpsInput.value === "r" ){
       console.log(userRpsInput.value);
       console.log(computerOutput);
+      first();
+      second();
     }
     else{
-      console.log(error = "choose rock paper or scissor");
+      alert(error = "choose rock paper or scissor");
     //  error.innerHTML = "choose rock paper or scissor";
     }
     if((userRpsInput.value === "r") && (computerOutput ==="r")){
@@ -55,42 +96,6 @@
     document.querySelector("#winScore").innerHTML = wScore;
     document.querySelector("#lossScore").innerHTML = lScore;
     document.querySelector("#tieScore").innerHTML = tScore;
-function first(){
-    if(userRpsInput.value === "r"){
-      document.getElementById("user1RockImg").style.display = "block";
-      document.getElementById("user1PaperImg").style.display = "none";
-      document.getElementById("user1ScissorImg").style.display = "none";
-    }
-    else if (userRpsInput.value === "p"){
-      document.getElementById("user1RockImg").style.display = "none";
-      document.getElementById("user1PaperImg").style.display = "block";
-      document.getElementById("user1ScissorImg").style.display = "none";
-    }
-    else if (userRpsInput.value === "s"){
-      document.getElementById("user1RockImg").style.display = "none";
-      document.getElementById("user1PaperImg").style.display = "none";
-      document.getElementById("user1ScissorImg").style.display = "block";
-    }
-}
-first()
-  
-function second(){
-    if(computerOutput === "r"){
-      document.getElementById("computer2RockImg").style.display = "block";
-      document.getElementById("computer2PaperImg").style.display = "none";
-      document.getElementById("computer2ScissorImg").style.display = "none";
-    }
-    else if (computerOutput === "p"){
-      document.getElementById("computer2RockImg").style.display = "none";
-      document.getElementById("computer2PaperImg").style.display = "block";
-      document.getElementById("computer2ScissorImg").style.display = "none";
-    }
-    else if (computerOutput === "s"){
-      document.getElementById("computer2RockImg").style.display = "none";
-      document.getElementById("computer2PaperImg").style.display = "none";
-      document.getElementById("computer2ScissorImg").style.display = "block";
-    }
-}
-second()
+
     userRpsInput.value = "";
   }
